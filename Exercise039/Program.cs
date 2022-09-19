@@ -9,6 +9,7 @@ Console.WriteLine(String.Join(" ", array));
 ReverseArray(array);
 Console.WriteLine(String.Join(" ", array));
 
+
 int[] GetArray(int size, int minValue, int maxValue)
 {
     int[] res = new int[size];
@@ -27,4 +28,14 @@ void ReverseArray(int[] inArray)
         inArray[i] = inArray[inArray.Length - i - 1];
         inArray[inArray.Length - i - 1] = k;
     }
+}
+
+int[] ReverseArray2(int[] inArray)
+{
+    int[] result = new int[inArray.Length];
+    for (int i = 0; i < inArray.Length; i++)
+    {
+        result[i] = inArray[inArray.Length - i - 1];
+    }
+    return result;
 }
