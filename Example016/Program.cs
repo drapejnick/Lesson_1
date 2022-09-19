@@ -1,6 +1,6 @@
 ﻿// задача с сортировкой массива данных с заданными числами по порядку. 
 
-int[] arr = { 1, 5, 4, 3, 2, 6, 7, 1, 1 };
+int[] arr = new Random().Next(0, 10);
 
 void PrintArray(int[] array)
 {
@@ -29,9 +29,6 @@ void SelectionSort(int[] array)
         array[minPosition] = temporary;
     }
 }
-
-PrintArray(arr);
-SelectionSort(arr);
 
 PrintArray(arr);
 

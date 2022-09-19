@@ -3,10 +3,9 @@
 // 5 -> 120
 
 Console.Clear();
-Console.Write("Введите число: ");
-int number = int.Parse(Console.ReadLine());
+int[] array = new int[8];
 
-int Factorial(int num)
+int Random(int arr)
 {
     int count = num;
     while (count > 1)
@@ -17,4 +16,4 @@ int Factorial(int num)
     return num;
 }
 
-Console.WriteLine($"{number} -> {Factorial(number)}");
+Console.WriteLine($"{array} -> {Random(array)}");
